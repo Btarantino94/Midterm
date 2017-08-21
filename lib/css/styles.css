@@ -304,7 +304,7 @@ td.text-right {
 }
 /*table.html ends here*/
 
-.codepen-body{
+#codepen-body{
 	margin: 30px;
 	background: red;
 	position: relative;
@@ -315,8 +315,10 @@ td.text-right {
 	display: inline-block;
 }
 
-.pen {
-	text-align: center;
-	list-style-type: none;
+#pen {
+  text-align: center;
+  line-height: 1;
+  margin: 0 auto;
+  padding-top: 13px;
 	font-size: 20px;
 }

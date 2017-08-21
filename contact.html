@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link type="text/css" rel="stylesheet" href="../midterm/lib/css/reset.css"/>
-  <link type="text/css" rel="stylesheet" href="../midterm/lib/css/styles.css"/>
+  <link href="../midterm/lib/css/reset.css" rel="stylesheet" type="text/css">
+  <link href="../midterm/lib/css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <script src="../midterm/lib/js/jsfile.js" type="text/javascript"></script>
+  <script src="../midterm/lib/js/jsfile.js" type="text/javascript">
+  </script>
   <title>2017 Road to Hire Midterm - Contact Page</title>
 </head>
- <body id="contact-page">
+
+
+<body id="contact-page">
 
   <header id="contact-head">
- <h1 class="my-header">2017 Road to Hire Midterm - Contact Page</h1>
+    <h1 class="my-header">2017 Road to Hire Midterm - Contact Page</h1>
     <div class="contact-container">
       <nav>
         <ul class="my-nav">
-          <li><a href="../midterm/index.html">Home</a></li>
-          <li><a href="../midterm/contact.html">Contact</a></li>
-          <li><a href="../midterm/table.html">Table</a></li>
-          <li><a href="../midterm/codepen.html">Codepen</a></li>
           <li>
-            <a href="../midterm/dropdown.html" class="dropdown-button">Dropdown</a>
-            <ul class="my-nav-dropdown">
-              <li><a href="/midterm/fakelink1.html">Link</a></li>
-              <li><a href="/midterm/fakelink2.html">Link</a></li>
-              <li><a href="/midterm/fakelink3.html">Link</a></li>
-            </ul> <!--dropdown -->
+            <a href="../midterm/index.html">Home</a>
           </li>
-        </ul>  <!-- my-nav -->
+          <li>
+            <a href="../midterm/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="../midterm/table.html">Table</a>
+          </li>
+          <li>
+            <a href="../midterm/codepen.html">Codepen</a>
+          </li>
+          <li>
+            <a class="dropdown-button" href="../midterm/dropdown.html">Dropdown</a>
+            <ul class="my-nav-dropdown">
+              <li>
+                <a href="/midterm/fakelink1.html">Link</a>
+              </li>
+              <li>
+                <a href="/midterm/fakelink2.html">Link</a>
+              </li>
+              <li>
+                <a href="/midterm/fakelink3.html">Link</a>
+              </li>
+            </ul><!--dropdown -->
+          </li>
+        </ul><!-- my-nav -->
       </nav>
-    </div> <!--container-->
-</header>
+    </div><!--container-->
+  </header>
 
   <section>
     <div id="contact-container">
-
-      <form name="theform">
+      <form id="theform" name="theform">
         <div class="form-input">
-          <label for="fname" class="form-label">First Name</label>
-          <input type="text" id="fname" class="form-input" name="firstname" placeholder="Your name..">
+          <label class="form-label" for="fname">First Name</label> <input class="form-input" id="fname" name="firstname" placeholder="Your name.." type="text">
         </div>
-
         <div class="form-input">
-          <label for="lname" class="form-label">Last Name</label>
-          <input type="text" id="lname" class="form-input" name="lastname" placeholder="Your last name..">
+          <label class="form-label" for="lname">Last Name</label> <input class="form-input" id="lname" name="lastname" placeholder="Your last name.." type="text">
         </div>
-
         <div class="form-input">
-          <label for="num" class="form-label">Phone Number</label>
-          <input type="text" id="num" class="form-input" name="num" placeholder="Phone number..">
+          <label class="form-label" for="num">Phone Number</label> <input class="form-input" id="num" name="num" placeholder="Phone number.." type="text">
         </div>
-
         <div class="form-input">
-          <label for="mail" class="form-label">Email</label>
-          <input type="text" id="mail" class="form-input" name="mail" placeholder="Email..">
+          <label class="form-label" for="mail">Email</label> <input class="form-input" id="mail" name="mail" placeholder="Email.." type="text">
         </div>
-
         <div class="form-textbox">
-          <label for="comment" id="comment-title" class="form-label">Questions:</label>
+          <label class="form-label" for="comment" id="comment-title">Questions:</label> 
           <textarea id="comment" name="comments" placeholder="Write something here.." style="height:200px"></textarea>
         </div>
-
         <div class="form-input">
-        <label for="color" id="color" class="form-label">Pick a color:</label>
-        <select id="rainbowcolor">
-            <option value="">Select a color</option>
-            <option value="orange">Red</option>
-            <option value="red">Orange</option>
-            <option value="green">Green</option>
-            <option value="">Blue</option>
-            <option value="orange">Violet</option>
-            <option value="red">Yellow</option>
-            <option value="green">Indigo</option>
+          <label class="form-label" for="color" id="color">Pick a color:</label> <select id="rainbowcolor">
+            <option value="">
+              Select a color
+            </option>
+            <option value="orange">
+              Red
+            </option>
+            <option value="red">
+              Orange
+            </option>
+            <option value="green">
+              Green
+            </option>
+            <option value="">
+              Blue
+            </option>
+            <option value="orange">
+              Violet
+            </option>
+            <option value="red">
+              Yellow
+            </option>
+            <option value="green">
+              Indigo
+            </option>
           </select>
-      </div>
-
-        <input type="submit" value="Submit" onclick="myForm(value)" />
-        <button type="reset" id="resetButton" value="Reset">Reset</button>
+        </div><input onclick="myForm(value)" type="submit" value="Submit"> <button id="resetButton" type="reset" value="Reset">Reset</button>
       </form>
     </div><!-- contact-container -->
   </section>
 
-  
   <footer>
-
     <div class="icon-container">
-      <a href="https://www.linkedin.com/in/britanny-tarantino-499a50108/">
-        <img src="./lib/img/icon-in.png" class="social-img in-icon-img" alt="linkedin">
-      </a></div><!-- footerin -->
-
+      <a href="https://www.linkedin.com/in/britanny-tarantino-499a50108/"><img alt="linkedin" class="social-img in-icon-img" src="./lib/img/icon-in.png"></a>
+    </div><!-- footerin -->
     <div class="icon-container">
-      <a href="https://freephotos.cc/">
-        <img src="./lib/img/cc.png" class="social-img in-icon-img" alt="cc">
-      </a></div><!-- footercc -->
-
-    <div  class="icon-container">
-      <a href="http://roadtohire.org/">
-        <img src="https://daks2k3a4ib2z.cloudfront.net/5750a0483c241ee12e0292b4/587a69bbbec7bc4e039d1d24_logo-white.svg" class="social-img rth-icon-img" alt="roadtohire logo">
-      </a>
+      <a href="https://freephotos.cc/"><img alt="cc" class="social-img in-icon-img" src="./lib/img/cc.png"></a>
+    </div><!-- footercc -->
+    <div class="icon-container">
+      <a href="http://roadtohire.org/"><img alt="roadtohire logo" class="social-img rth-icon-img" src="https://daks2k3a4ib2z.cloudfront.net/5750a0483c241ee12e0292b4/587a69bbbec7bc4e039d1d24_logo-white.svg"></a>
     </div><!-- footer -->
     <p>This webpage is for educational purposes only.</p>
-  </footer> 
-
- </body>
+  </footer>
+  
+</body>
 </html>
